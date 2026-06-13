@@ -1,16 +1,8 @@
-window.addEventListener("load", () => {
-  const scroll = new LocomotiveScroll({
-    el: document.querySelector("[data-scroll-container]"),
-    smooth: true,
-  });
+const scroll = new LocomotiveScroll({
+    el:document.querySelector('main'),
+    smooth:true,
 });
 
-window.addEventListener("load", () => {
-  scroll.update();
+window.addEventListener('load', () => {
+    scroll.update();
 });
-
-
-// const scroll = new LocomotiveScroll({
-//     el:document.querySelector('main'),
-//     smooth:true,
-// });
