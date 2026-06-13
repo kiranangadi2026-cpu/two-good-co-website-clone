@@ -1,0 +1,348 @@
+/* -------------- Selection Fonts ---------------- */
+
+@font-face {
+    font-family: gilroyL;
+    src: url(./fonts/Gilroy-Light.otf);
+}
+
+@font-face {
+    font-family: gilroyB;
+    src: url(./fonts/Futura-Bold.woff2);
+}
+
+*::selection{
+    background-color: black;
+    color: white;
+}
+
+::-webkit-scrollbar {
+  width: 4px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.15);
+  border-radius: 100px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(255, 255, 255, 0.3);
+}
+
+:root {
+    --textColor: black;
+    --bgColor: #F7F7F7;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+    overflow-x: hidden;
+}
+
+main {
+    background-color: var(--bgColor);
+}
+
+/*----------------- section-1---------------------- */
+
+nav {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding: 20px 30px;
+}
+
+.left-nav svg {
+    height: 80px;
+    width: fit-content;
+}
+
+.right-nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 60px;
+}
+
+.right-nav a {
+    font-weight: 600;
+    font-size: 14px;
+    text-decoration: none;
+    font-family: gilroyL;
+    color: var(--textColor);
+}
+
+.right-nav a i {
+    font-size: 18px;
+}
+
+.text-section-1 {
+    padding-left: 20px;
+    padding-top: 8vw;
+
+}
+
+.text-section-1 h1 {
+    font-size: 15vw;
+    font-weight: 900;
+    line-height: 14vw;
+    font-family: gilroyB;
+    width: fit-content;
+    height: fit-content;
+}
+
+.h1-div {
+    display: flex;
+    gap: 15px;
+}
+
+/* ------------ Section-2 ----------------- */
+
+.part-2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 200px;
+    width: 100%;
+    padding: 30px;
+    padding-top: 50px;
+}
+
+.image-box {
+    height: 800px;
+    width: 100%;
+    overflow: hidden;
+}
+
+.image-box img {
+    object-fit: cover;
+    object-position: top;
+    height: 100%;
+    width: 100%;
+}
+
+/* ------------- Section-3 ---------------- */
+
+.part-3{
+    width: 100%;
+    padding: 100px 20px 50px 20px;
+}
+
+.part-3 h3{
+    font-family: gilroyB;
+    font-size: 50px;
+    text-align: center;
+    line-height: 50px;   
+}
+
+.part-3 p{
+    font-size: 16px;
+    font-family: gilroyL;
+    padding: 50px;
+    text-align: center;
+    font-weight: 700;
+}
+
+/* ------------ Section-4 -------------- */
+
+.part-4{
+    padding: 30px;
+}
+
+.part-4 .boxes{
+    min-height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    gap: 15px;
+}
+
+.box{
+    height: 700px;
+    width: 420px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.box img{
+    height: 100%;
+    width: 100%;
+    object-position: top;
+    object-fit: cover;
+}
+
+.iteams{
+    top: 50%;
+    height: 40px;
+    width: 250px;
+    background-color: var(--bgColor);
+    border-radius: 50px;
+    position: absolute;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.iteams p i{
+    font-size: 15px;
+}
+
+.iteams p{
+    font-size: 13px;
+    font-family: gilroyL;
+}
+
+.iteams h5{
+    font-size: 13px;
+    font-family: gilroyL;
+}
+
+/* ------------- section-5 ---------------- */
+
+.part-5{
+    display: flex;
+    justify-content: space-between;
+    padding: 30px;
+
+}
+
+.part-5 h2{
+    font-size: 60px;
+    font-family: gilroyB;
+    text-transform: uppercase;
+    line-height: 60px;
+}
+
+.text-part-5{
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    padding-right: 120px;
+}
+
+.text-part-5 .p{
+    border-bottom: 1px solid black;
+    width: fit-content;
+}
+
+/* ---------- Section-6--------------- */
+
+.part-6{
+    padding: 20px;
+}
+
+.top-1{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 10px;
+    margin-bottom: 30px;
+
+}
+
+.part-6 .box1{
+    height: 500px;
+    width: 500px;
+    padding: 20px;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.box1 img{
+    height: 100%;
+    object-position: center;
+    object-fit: cover;
+}
+
+
+@media (max-width:890px) {
+    nav .a{
+        display: none;
+    }
+
+    .boxes .box{
+        height: 500px;
+    }
+    .box img{
+        object-position: top;
+    }
+    .iteams{
+        width: 80%;
+        height: 30px;
+    }
+    .iteams p{
+        font-size: 9px;
+    }
+    .iteams h5{
+        font-size: 9px;
+    }
+}
+
+@media (max-width:640px) {
+    .left-nav svg{
+        height: 50px;
+    }
+    
+    .text-section-1 h1{
+        font-size: 14vw;
+    }
+    .image-box{
+        height: 600px;
+    }
+    .boxes{
+        flex-direction: column;
+    }
+    .box{
+        width: 98%;
+    }
+    .iteams{
+        height: 40px;
+    }
+    .iteams p{
+        font-size: 16px;
+    }
+    .part-3 h3{
+        font-size: 30px;
+        line-height: 30px;
+    }
+    .part-3{
+        padding-bottom: 0px;
+    }
+    .part-5{
+        flex-direction: column;
+        gap: 30px;
+    }
+    .part-5 h2{
+        font-size: 30px;
+        line-height: 30px;
+    }
+    .top-1{
+        flex-direction: column;
+    }
+
+    .box1{
+        height: 200px;
+        width: 200px;
+    }
+}
