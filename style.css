@@ -10,26 +10,26 @@
     src: url(./fonts/Futura-Bold.woff2);
 }
 
-*::selection{
+*::selection {
     background-color: black;
     color: white;
 }
 
 ::-webkit-scrollbar {
-  width: 4px;
+    width: 4px;
 }
 
 ::-webkit-scrollbar-track {
-  background: transparent;
+    background: transparent;
 }
 
 ::-webkit-scrollbar-thumb {
-  background: rgba(255, 255, 255, 0.15);
-  border-radius: 100px;
+    background: rgba(255, 255, 255, 0.15);
+    border-radius: 100px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: rgba(255, 255, 255, 0.3);
+    background: rgba(255, 255, 255, 0.3);
 }
 
 
@@ -43,13 +43,16 @@
     margin: 0;
     box-sizing: border-box;
 }
+
 html {
-    overflow: hidden; /* Let locomotive handle scrolling */
+    overflow: hidden;
+    /* Let locomotive handle scrolling */
 }
 
 [data-scroll-container] {
     min-height: 100vh;
 }
+
 main {
     background-color: var(--bgColor);
 }
@@ -138,19 +141,19 @@ nav {
 
 /* ------------- Section-3 ---------------- */
 
-.part-3{
+.part-3 {
     width: 100%;
     padding: 100px 20px 50px 20px;
 }
 
-.part-3 h3{
+.part-3 h3 {
     font-family: gilroyB;
     font-size: 50px;
     text-align: center;
-    line-height: 50px;   
+    line-height: 50px;
 }
 
-.part-3 p{
+.part-3 p {
     font-size: 16px;
     font-family: gilroyL;
     padding: 50px;
@@ -160,11 +163,11 @@ nav {
 
 /* ------------ Section-4 -------------- */
 
-.part-4{
+.part-4 {
     padding: 30px;
 }
 
-.part-4 .boxes{
+.part-4 .boxes {
     min-height: 200px;
     display: flex;
     align-items: center;
@@ -173,7 +176,7 @@ nav {
     gap: 15px;
 }
 
-.box{
+.box {
     height: 700px;
     width: 420px;
     overflow: hidden;
@@ -183,14 +186,14 @@ nav {
     position: relative;
 }
 
-.box img{
+.box img {
     height: 100%;
     width: 100%;
     object-position: top;
     object-fit: cover;
 }
 
-.iteams{
+.iteams {
     top: 50%;
     height: 40px;
     width: 250px;
@@ -204,37 +207,37 @@ nav {
     padding: 20px;
 }
 
-.iteams p i{
+.iteams p i {
     font-size: 15px;
 }
 
-.iteams p{
+.iteams p {
     font-size: 13px;
     font-family: gilroyL;
 }
 
-.iteams h5{
+.iteams h5 {
     font-size: 13px;
     font-family: gilroyL;
 }
 
 /* ------------- section-5 ---------------- */
 
-.part-5{
+.part-5 {
     display: flex;
     justify-content: space-between;
     padding: 30px;
 
 }
 
-.part-5 h2{
+.part-5 h2 {
     font-size: 60px;
     font-family: gilroyB;
     text-transform: uppercase;
     line-height: 60px;
 }
 
-.text-part-5{
+.text-part-5 {
     width: 400px;
     display: flex;
     flex-direction: column;
@@ -242,18 +245,18 @@ nav {
     padding-right: 120px;
 }
 
-.text-part-5 .p{
+.text-part-5 .p {
     border-bottom: 1px solid black;
     width: fit-content;
 }
 
 /* ---------- Section-6--------------- */
 
-.part-6{
+.part-6 {
     padding: 20px;
 }
 
-.top-1{
+.top-1 {
     display: flex;
     align-items: center;
     justify-content: space-evenly;
@@ -262,7 +265,7 @@ nav {
 
 }
 
-.part-6 .box1{
+.part-6 .box1 {
     height: 500px;
     width: 500px;
     padding: 20px;
@@ -273,80 +276,274 @@ nav {
     overflow: hidden;
 }
 
-.box1 img{
+.box1 img {
     height: 100%;
     object-position: center;
     object-fit: cover;
 }
 
+/* --------- Section-7 -------------- */
+
+.part-7 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 40px;
+    padding: 20px;
+}
+
+.part-7 h2 {
+    text-transform: uppercase;
+    font-size: 70px;
+    text-align: center;
+    font-family: gilroyB;
+    line-height: 70px;
+    padding-bottom: 40px;
+
+}
+
+.part-7 button {
+    padding: 15px 40px;
+    font-size: 13px;
+    font-family: gilroyL;
+    color: white;
+    background-color: black;
+    border: none;
+    border-radius: 50px;
+}
+
+.part-7 p {
+    font-size: 18px;
+    font-family: gilroyL;
+    text-align: center;
+    font-weight: 800;
+}
+
+/* ---------- Section-8 ------------------ */
+
+.part-8 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 20px;
+}
+
+.part-8 .boxes {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 40px;
+    padding: 20px;
+}
+
+.part-8 .box {
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: start;
+    gap: 30px;
+}
+
+.part-8 .box h3 {
+    font-size: 25px;
+    font-family: gilroyB;
+}
+
+.part-8 .box p {
+    font-size: 16px;
+    font-family: gilroyL;
+    width: 90%;
+    font-weight: 700;
+}
+
+.part-8 .box {
+    height: 600px;
+}
+
+.part-8 .box img {
+    height: 100%;
+    width: 100%;
+}
+
+.text-part-8 {
+    display: flex;
+    align-items: center;
+    padding: 50px 20px 10px 20px;
+    justify-content: space-between;
+    text-transform: uppercase;
+    width: 90%;
+    border-bottom: 1px solid black;
+}
+
+.text-part-8 h1 {
+    font-size: 30px;
+    font-family: gilroyB;
+    line-height: 30px;
+}
+
+.text-part-8 h1 i {
+    font-size: 30px;
+}
+
+/* ------------ Footer ------------ */
+
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 50px 30px;
+}
+
+footer h5 {
+    font-size: 16px;
+    color: rgba(0, 0, 0, 0.817);
+    font-family: gilroyL;
+    padding-bottom: 20px;
+}
+
+footer p {
+    font-family: gilroyL;
+    font-weight: 700;
+    font-size: 15px;
+    color: black;
+    height: 20px;
+}
+
+footer p:hover {
+    border-bottom: 1px solid black;
+    width: fit-content;
+    cursor: pointer;
+}
+
+.center-footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+}
+
+.center-footer svg {
+    height: 200px;
+}
+
+.text-mid-footer {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+    justify-content: center;
+}
+
+.text-mid-footer h4 {
+    font-family: gilroyL;
+    font-size: 14px;
+    color: rgba(0, 0, 0, 0.674);
+}
+
+.out-foot{
+    display: none;
+}
 
 @media (max-width:890px) {
-    nav .a{
+    nav .a {
         display: none;
     }
 
-    .boxes .box{
+    .boxes .box {
         height: 500px;
     }
-    .box img{
+
+    .box img {
         object-position: top;
     }
-    .iteams{
+
+    .iteams {
         width: 80%;
         height: 30px;
     }
-    .iteams p{
+
+    .iteams p {
         font-size: 9px;
     }
-    .iteams h5{
+
+    .iteams h5 {
         font-size: 9px;
     }
 }
 
 @media (max-width:640px) {
-    .left-nav svg{
+    .left-nav svg {
         height: 50px;
     }
-    
-    .text-section-1 h1{
+
+    .text-section-1 h1 {
         font-size: 14vw;
     }
-    .image-box{
+
+    .image-box {
         height: 600px;
     }
-    .boxes{
-        flex-direction: column;
-    }
-    .box{
-        width: 98%;
-    }
-    .iteams{
-        height: 40px;
-    }
-    .iteams p{
-        font-size: 16px;
-    }
-    .part-3 h3{
-        font-size: 30px;
-        line-height: 30px;
-    }
-    .part-3{
-        padding-bottom: 0px;
-    }
-    .part-5{
-        flex-direction: column;
-        gap: 30px;
-    }
-    .part-5 h2{
-        font-size: 30px;
-        line-height: 30px;
-    }
-    .top-1{
+
+    .boxes {
         flex-direction: column;
     }
 
-    .box1{
+    .box {
+        width: 98%;
+    }
+
+    .iteams {
+        height: 40px;
+    }
+
+    .iteams p {
+        font-size: 16px;
+    }
+
+    .part-3 h3 {
+        font-size: 30px;
+        line-height: 30px;
+    }
+
+    .part-3 {
+        padding-bottom: 0px;
+    }
+
+    .part-5 {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .part-5 h2 {
+        font-size: 30px;
+        line-height: 30px;
+    }
+
+    .top-1 {
+        flex-direction: column;
+    }
+
+    .box1 {
         height: 200px;
         width: 200px;
     }
+
+    footer{
+        flex-direction: column;
+        gap: 30px;
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+
+    .in-foot{
+        display: none;
+    }
+    .out-foot{
+        align-items: center;
+        justify-content: center;
+        display: flex;
+        padding-bottom: 10px;
+    }
+
 }
